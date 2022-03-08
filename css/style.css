@@ -1,0 +1,181 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+}
+
+nav {
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+footer {
+    background-color: #F2F2F2;
+    display: flex;
+    align-items: top;
+    width: 100%;
+}
+
+.mw-1400 {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.fw-700{
+    font-weight: 700;
+}
+
+.menu {
+    display: flex;
+    margin: 0;
+}
+
+.logo {
+    margin-right: auto;
+}
+
+.nav-item {
+    padding: 40px 30px;
+}
+
+.nav-item:hover {
+    border-top: solid 3px #0065FC;
+    padding: 37px 30px;
+}
+
+.nav-item:hover a{
+    color: #0065FC;
+}
+
+.mar-hor-2{
+    margin: 0 2%;
+}
+
+.pad-10{
+    padding: 10px;
+}
+
+.pad-13{
+    padding: 13px;
+}
+
+.pad-right-10 {
+    padding-right: 10px;
+}
+
+.pad-vert-40{
+    padding: 40px 0;
+}
+
+.pad-bot-10{
+    padding-bottom: 10px;
+}
+
+.pad-bot-20{
+    padding-bottom: 20px;
+}
+
+.a-propos{
+    padding-left: 3%;
+}
+
+.nos-hebergements{
+    padding-left: 10%;
+}
+
+.assistance{
+    padding-left: 10%;
+}
+
+.search input{
+    padding: 10px 0;
+    border: 1px solid #F2F2F2;
+}
+.search button {
+    padding: 10px;
+    border-radius: 0 15px 15px 0;
+    color: #F2F2F2;
+    border-width: 0;
+    margin-left: -4px;
+    height: 38px;
+} 
+
+.search i {
+    padding: 12px;
+    border-radius: 15px 0 0 15px;
+    border-width: 0;
+    margin-right: -4px;
+    height: 38px;
+}
+
+.bc-blue{
+    background-color: #0065FC;
+}
+
+.bc-grey{
+    background-color: #F2F2F2;
+}
+
+.bc-cornflowerblue{
+    background-color: #deebff;
+}
+
+.filtre{
+    border: 2px solid #DEEBFF;
+    margin-left: 2%;
+    position: relative;
+    overflow: hidden;
+    min-width: 154px;
+}
+
+.carre-rond {
+    height: 45px;
+    width: 45px;
+    position: absolute;
+    text-align: center;
+    line-height: 45px;
+    z-index: 1;
+}
+
+.filtre a:hover{
+    color: #FFFFFF;
+    background-color: #deebff;
+    z-index: 0;
+}
+
+.br{
+    border-radius: 25px;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+}
+
+.option {
+    font-weight: 700;
+    padding-left: 55px;
+    padding-right: 15px;
+    display: inline-block;
+    line-height: 45px;
+    width: 100%;
+}
+
+.blue{
+    color: #0065FC;
+}
