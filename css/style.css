@@ -40,6 +40,10 @@ footer {
     font-weight: 700;
 }
 
+.fs-initial {
+    font-size: initial;
+}
+
 .menu {
     display: flex;
     margin: 0;
@@ -62,8 +66,16 @@ footer {
     color: #0065FC;
 }
 
+.mar-10{
+    margin: 10px;
+}
+
 .mar-hor-2{
     margin: 0 2%;
+}
+
+.mar-bot-30{
+    margin-bottom: 30px;
 }
 
 .pad-10{
@@ -74,12 +86,24 @@ footer {
     padding: 13px;
 }
 
+.pad-40{
+    padding: 40px;
+}
+
 .pad-right-10 {
     padding-right: 10px;
 }
 
+.pad-hor-10{
+    padding: 0 10px;
+}
+
 .pad-vert-40{
     padding: 40px 0;
+}
+
+.pad-bot-3{
+    padding-bottom: 3px;
 }
 
 .pad-bot-10{
@@ -106,6 +130,7 @@ footer {
     padding: 10px 0;
     border: 1px solid #F2F2F2;
 }
+
 .search button {
     padding: 10px;
     border-radius: 0 15px 15px 0;
@@ -135,12 +160,22 @@ footer {
     background-color: #deebff;
 }
 
+.bc-white{
+    background-color: #fff;
+}
+
 .filtre{
     border: 2px solid #DEEBFF;
     margin-left: 2%;
     position: relative;
     overflow: hidden;
     min-width: 154px;
+}
+    
+.filtre a:hover{
+    color: #FFFFFF;
+    background-color: #deebff;
+    z-index: 0;
 }
 
 .carre-rond {
@@ -151,20 +186,30 @@ footer {
     line-height: 45px;
     z-index: 1;
 }
-
-.filtre a:hover{
-    color: #FFFFFF;
-    background-color: #deebff;
-    z-index: 0;
+    
+.bor-rad{
+    border-radius: 25px;
 }
 
-.br{
-    border-radius: 25px;
+.bor-rad-top{
+    border-radius: 25px 25px 0 0;
 }
 
 .flex{
     display: flex;
     align-items: center;
+}
+
+.jc-space-between{
+    justify-content: space-between;
+}
+
+.jc-space-around{
+    justify-content: space-around;
+}
+
+.flex-wrap-wrap{
+    flex-wrap: wrap;
 }
 
 .option {
@@ -174,6 +219,26 @@ footer {
     display: inline-block;
     line-height: 45px;
     width: 100%;
+}
+
+#hebergement{
+    width: 65%;
+    margin-right: 5%;
+}
+
+#most-popular{
+    width: 30%;
+}
+
+.card-hebergement{
+    width: 250px;
+    height: 200px;
+}
+
+.card-hebergement > img{
+    padding: 5px;
+    width: 250px;
+    height: 125px;
 }
 
 .blue{
