@@ -26,8 +26,6 @@ a {
 
 footer {
     background-color: #F2F2F2;
-    display: flex;
-    align-items: top;
     width: 100%;
 }
 
@@ -42,6 +40,10 @@ footer {
 
 .fs-initial {
     font-size: initial;
+}
+
+.fs-large{
+    font-size: large;
 }
 
 .menu {
@@ -66,16 +68,28 @@ footer {
     color: #0065FC;
 }
 
+.w-100{
+    width: 100%;
+}
+
 .mar-10{
     margin: 10px;
 }
 
-.mar-hor-2{
-    margin: 0 2%;
+.mar-hor-auto{
+    margin: 0 auto;
 }
 
 .mar-bot-30{
     margin-bottom: 30px;
+}
+
+.mar-bot-40{
+    margin-bottom: 40px;
+}
+
+.mar-bot-50{
+    margin-bottom: 50px;
 }
 
 .pad-10{
@@ -90,12 +104,20 @@ footer {
     padding: 40px;
 }
 
+.pad-40-20{
+    padding: 40px 20px;
+}
+
 .pad-right-10 {
     padding-right: 10px;
 }
 
 .pad-hor-10{
     padding: 0 10px;
+}
+
+.pad-hor-40{
+    padding: 0 40px;
 }
 
 .pad-vert-40{
@@ -114,16 +136,16 @@ footer {
     padding-bottom: 20px;
 }
 
-.a-propos{
-    padding-left: 3%;
+.pad-bot-40{
+    padding-bottom: 40px;
 }
 
 .nos-hebergements{
-    padding-left: 10%;
+    padding-left: 20%;
 }
 
 .assistance{
-    padding-left: 10%;
+    padding-left: 20%;
 }
 
 .search input{
@@ -133,7 +155,6 @@ footer {
 
 .search button {
     padding: 10px;
-    border-radius: 0 15px 15px 0;
     color: #F2F2F2;
     border-width: 0;
     margin-left: -4px;
@@ -142,7 +163,6 @@ footer {
 
 .search i {
     padding: 12px;
-    border-radius: 15px 0 0 15px;
     border-width: 0;
     margin-right: -4px;
     height: 38px;
@@ -187,16 +207,31 @@ footer {
     z-index: 1;
 }
     
-.bor-rad{
+.bor-rad-15{
+    border-radius: 15px;
+}
+    
+.bor-rad-25{
     border-radius: 25px;
 }
 
 .bor-rad-top{
-    border-radius: 25px 25px 0 0;
+    border-radius: 15px 15px 0 0;
+}
+
+.bor-rad-left{
+    border-radius: 15px 0 0 15px;
+}
+
+.bor-rad-right{
+    border-radius: 0 15px 15px 0;
 }
 
 .flex{
     display: flex;
+}
+
+.ai-center{
     align-items: center;
 }
 
@@ -208,8 +243,16 @@ footer {
     justify-content: space-around;
 }
 
+.jc-flex-start{
+    justify-content: flex-start;
+}
+
 .flex-wrap-wrap{
     flex-wrap: wrap;
+}
+
+.fd-column{
+    flex-direction: column;
 }
 
 .option {
@@ -223,11 +266,14 @@ footer {
 
 #hebergement{
     width: 65%;
-    margin-right: 5%;
+    height: 620px;
+    margin-right: 2%;
 }
 
 #most-popular{
     width: 30%;
+    height: 620px;
+    margin-right: 2%;
 }
 
 .card-hebergement{
@@ -238,6 +284,17 @@ footer {
 .card-hebergement > img{
     padding: 5px;
     width: 250px;
+    height: 125px;
+}
+
+.card-popular{
+    width: 350px;
+    height: 125px;
+}
+
+.card-popular > img{
+    padding: 5px;
+    width: 150px;
     height: 125px;
 }
 
