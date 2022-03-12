@@ -255,6 +255,10 @@ footer {
     flex-direction: column;
 }
 
+.fd-row{
+    flex-direction: row;
+}
+
 .option {
     font-weight: 700;
     padding-left: 55px;
@@ -274,6 +278,10 @@ footer {
     width: 30%;
     height: 620px;
     margin-right: 2%;
+}
+
+#activites-Marseille{
+    width: 100%;
 }
 
 .card-hebergement{
@@ -297,6 +305,66 @@ footer {
     width: 150px;
     height: 125px;
 }
+
+.card-activite{
+    width: 300px;
+}
+
+.card-activite > img{
+    width: 300px;
+}
+
+.vieux-port{
+    height: 450px;
+}
+
+.vieux-port > img{
+    height: 400px
+}
+
+.fort-pomegues{
+    height: 225px;
+}
+
+.fort-pomegues > img{
+    height: 175px;
+}
+
+.iles-frioul{
+    height: 175px;
+}
+
+.iles-frioul > img{
+    height: 125px;
+}
+
+.parc-nat-calanques{
+    height: 450px;
+}
+
+.parc-nat-calanques > img{
+    height: 400px
+}
+
+.notre-dame{
+    height: 200px;
+}
+
+.notre-dame > img{
+    height: 150px;
+}
+
+.parc-longchamp{
+    height: 200px;
+}
+
+.parc-longchamp > img{
+    height: 150px;
+}
+
+/* .box-shadow{
+    box-shadow: ;
+} */
 
 .blue{
     color: #0065FC;
