@@ -24,6 +24,10 @@ a {
     color: black;
 }
 
+img{
+    object-fit: cover;
+}
+
 footer {
     background-color: #F2F2F2;
     width: 100%;
@@ -78,6 +82,14 @@ footer {
 
 .mar-hor-auto{
     margin: 0 auto;
+}
+
+.mar-left-neg-3{
+    margin-left: -3%;
+}
+
+.mar-right-1{
+    margin-right: 1%;
 }
 
 .mar-bot-30{
@@ -362,9 +374,10 @@ footer {
     height: 150px;
 }
 
-/* .box-shadow{
-    box-shadow: ;
-} */
+.box-shadow{
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, .10);
+    border-radius: 0px 0px 15px 15px;
+}
 
 .blue{
     color: #0065FC;
