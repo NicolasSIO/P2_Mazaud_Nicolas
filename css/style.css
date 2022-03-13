@@ -35,7 +35,6 @@ footer {
 
 .mw-1400 {
     max-width: 1400px;
-    margin: 0 auto;
 }
 
 .fw-700{
@@ -381,4 +380,76 @@ footer {
 
 .blue{
     color: #0065FC;
+}
+
+@media screen and (max-width: 992px) {
+    #hebergements-Marseille{
+        flex-direction: column;
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    #hebergement{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .mar-10{
+        margin: 0;
+    }
+
+    #most-popular{
+        width: 100%;
+        height: auto;
+    }
+
+    #popular{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    #popular > div > .pad-hor-10{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding-bottom: 10px;
+    }
+
+    .card-popular{
+        width: 250px;
+        height: 250px;
+        flex-direction: column;
+    }
+
+    .card-popular > img{
+        width: 250px;
+        border-radius: 15px 15px 0 0;
+    }
+
+    .pad-hor-40{
+        padding: 0;
+    }
+
+    .mar-bot-50{
+        margin-bottom: 0;
+    }
+
+    #activites{
+        flex-direction: column;
+    }
+
+    #activites > div {
+        margin-bottom: 30px;
+    }
+
+    .card-activite{
+        width: 400px;
+    }
+
+    .card-activite > img{
+        width: 400px;
+    }
 }
