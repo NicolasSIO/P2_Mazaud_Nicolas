@@ -155,8 +155,21 @@ footer {
   padding-bottom: 20px;
 }
 
+.pad-left-10{
+  padding-left: 10px;
+}
+
 .pad-bot-40 {
   padding-bottom: 40px;
+}
+
+.fa-info{
+  border: 1px solid #deebff;
+  height: 25px;
+  width: 25px;
+  font-size: small;
+  text-align: center;
+  line-height: 23px;
 }
 
 .nos-hebergements {
@@ -316,12 +329,12 @@ footer {
 .card-popular {
   width: 350px;
   height: 125px;
+  border: 6px solid white;
 }
 
 .card-popular > img {
-  padding: 5px;
-  width: 150px;
-  height: 125px;
+  width: 140px;
+  height: 100%;
 }
 
 .card-activite {
@@ -387,6 +400,15 @@ footer {
 
 .blue {
   color: #0065fc;
+}
+
+.position-rel{
+  position: relative;
+}
+
+.pos-abs-5{
+  position: absolute;
+  bottom: 5px;
 }
 
 @media screen and (max-width: 992px) {
