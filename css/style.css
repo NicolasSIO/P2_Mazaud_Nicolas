@@ -75,7 +75,7 @@ footer {
   width: 47%;
 }
 
-.w-48-mq-100{
+.w-48-mq-100 {
   width: 48%;
 }
 
@@ -155,7 +155,7 @@ footer {
   padding-bottom: 20px;
 }
 
-.pad-left-10{
+.pad-left-10 {
   padding-left: 10px;
 }
 
@@ -163,7 +163,7 @@ footer {
   padding-bottom: 40px;
 }
 
-.fa-info{
+.fa-info {
   border: 1px solid #deebff;
   height: 25px;
   width: 25px;
@@ -402,18 +402,18 @@ footer {
   color: #0065fc;
 }
 
-.position-rel{
+.position-rel {
   position: relative;
 }
 
-.pos-abs-5{
+.pos-abs-5 {
   position: absolute;
   bottom: 5px;
 }
 
 @media screen and (max-width: 992px) {
-
-  header, main{
+  header,
+  main {
     padding: 0 15px;
   }
 
@@ -459,8 +459,14 @@ footer {
   }
 
   .card-popular > img {
-    width: 250px;
+    width: 100%;
+    height: 150px;
     border-radius: 15px 15px 0 0;
+  }
+
+  .card-popular > div {
+    padding-top: 5px;
+    height: 100%;
   }
 
   .pad-hor-40 {
@@ -477,10 +483,11 @@ footer {
 
   #activites > div {
     margin-bottom: 30px;
+    justify-content: space-around;
   }
 
   .card-activite {
-    width:370px;
+    width: 370px;
   }
 
   .card-activite > img {
@@ -491,102 +498,143 @@ footer {
     margin-left: 3%;
   }
 
-  .w-47-mq-100{
+  .w-47-mq-100 {
     width: 100%;
   }
 
-  .w-48-mq-100{
+  .w-48-mq-100 {
     width: 100%;
   }
 }
 
-@media screen and (max-width:768px){
-
-  body{
+@media screen and (max-width: 768px) {
+  body {
     width: 100%;
     font-size: 17px;
   }
 
-  header{
+  header {
     padding: 0;
   }
 
-  nav{
+  nav {
     display: flex;
     flex-direction: column;
+    margin-bottom: 20px;
   }
 
-  main{
+  main {
     padding: 0;
   }
 
-  .mq-flex-wrap-wrap{
+  .mq-flex-wrap-wrap {
     flex-wrap: wrap;
   }
 
-  #filtre{
+  #filtre {
     width: 100%;
     margin-bottom: 2%;
   }
 
-  .filtre{
+  .filtre {
     margin: 0 2% 4% 0;
   }
 
-  .logo{
+  .logo {
     margin: 0;
     width: 200px;
     height: 75px;
+    margin-bottom: 30px;
   }
 
-  .menu{
+  .menu {
     display: flex;
-    justify-content: space-around;
-  }
-
-  .nav-item{
     width: 100%;
-    padding: 20px ;
+    height: 50px;
+    align-items: center;
+    font-size: 17px;
   }
 
-  #recherche{
+  .nav-item {
+    width: 100%;
+    padding: 0;
+    border-bottom: solid 3px #deebff;
+    border-top: 0;
+  }
+
+  .nav-item:active {
+    border-bottom: solid 3px #0065fc;
+  }
+
+  .nav-item:active > a {
+    color: #0065fc;
+  }
+
+  .nav-item:hover {
+    border-top: 0;
+    padding-left: 10%;
+    padding-bottom: 20px;
+    padding-top: 0;
+    padding-right: 0;
+  }
+
+  #recherche {
     padding: 0 15px;
   }
 
-  #hebergements-Marseille{
+  #info {
+    display: flex;
+  }
+
+  #info > i {
+    margin-top: -5px;
+    margin-right: 5px;
+  }
+
+  #hebergements-Marseille {
     flex-direction: column-reverse;
   }
 
-  #hebergement{
+  #hebergement {
     height: auto;
     background-color: #fff;
+  }
+
+  #hebergement > h2 {
+    padding-left: 15px;
   }
 
   #hebergement > div {
     padding: 15px;
   }
 
-  #hebergement > a{
+  #hebergement > a {
     padding: 15px;
   }
 
-  #most-popular{
+  #most-popular {
     padding: 15px;
     width: 100%;
     border-radius: 0;
   }
 
-  #popular{
+  #most-popular > div {
+    padding: 20px 0;
+    margin-bottom: 0;
+  }
+
+  #popular {
     flex-direction: column;
   }
 
-  #activites-Marseille > h2{
+  #activites-Marseille > h2 {
     padding-left: 15px;
   }
 
-  #activites > div{
+  #activites > div {
     padding: 15px;
     flex-direction: column;
+    margin-bottom: 0;
   }
 
   .card-popular {
@@ -600,7 +648,7 @@ footer {
     padding: 5px;
     border-radius: 15px 0 0 15px;
     width: 150px;
-    height: 125px;
+    height: 100%;
   }
 
   .card-hebergement {
@@ -616,30 +664,36 @@ footer {
     height: 125px;
   }
 
-  .card-activite{
+  .card-activite {
     height: 200px;
     margin-bottom: 30px;
+    width: 100%;
   }
 
-  .card-activite > img{
+  .card-activite:last-child {
+    margin-bottom: 0;
+  }
+
+  .card-activite > img {
     height: 150px;
+    width: 100%;
   }
 
-  footer > div{
+  footer > div {
     flex-direction: column;
   }
 
-  .a-propos{
+  .a-propos {
     margin-left: 15px;
     margin-bottom: 20px;
   }
 
-  .nos-hebergements{
+  .nos-hebergements {
     padding-left: 15px;
     margin-bottom: 20px;
   }
 
-  .assistance{
+  .assistance {
     padding-left: 15px;
     margin-bottom: 20px;
   }
