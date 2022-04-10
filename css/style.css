@@ -4,15 +4,26 @@
   margin: 0;
 }
 
+/* Définition des propriétés des polices */
+
 body {
   font-family: "Raleway", sans-serif;
   font-size: 14px;
 }
 
-nav {
-  display: flex;
-  align-items: center;
+.fw-700 {
+  font-weight: 700;
 }
+
+.fs-initial {
+  font-size: initial;
+}
+
+.fs-large {
+  font-size: large;
+}
+
+/* -------------------------------------- */
 
 ul {
   list-style: none;
@@ -27,25 +38,11 @@ img {
   object-fit: cover;
 }
 
-footer {
-  background-color: #f2f2f2;
-  width: 100%;
-}
+/* Définition de la navigation */
 
-.mw-1400 {
-  max-width: 1400px;
-}
-
-.fw-700 {
-  font-weight: 700;
-}
-
-.fs-initial {
-  font-size: initial;
-}
-
-.fs-large {
-  font-size: large;
+nav {
+  display: flex;
+  align-items: center;
 }
 
 .menu {
@@ -71,6 +68,80 @@ footer {
   color: #0065fc;
 }
 
+.fa-info {
+  border: 1px solid #deebff;
+  height: 25px;
+  width: 25px;
+  font-size: small;
+  text-align: center;
+  line-height: 23px;
+}
+
+.search-button > i {
+  display: none;
+}
+
+.search input {
+  padding: 10px 0;
+  border: 1px solid #f2f2f2;
+  height: 38px;
+}
+
+.search button {
+  padding: 10px;
+  color: #f2f2f2;
+  border-width: 0;
+  margin-left: -4px;
+  height: 38px;
+}
+
+.search i {
+  padding: 12px;
+  border-width: 0;
+  margin-right: -4px;
+  height: 38px;
+}
+
+.filtre {
+  border: 2px solid #deebff;
+  margin-left: 2%;
+  position: relative;
+  overflow: hidden;
+  min-width: 154px;
+}
+
+.filtre a:hover {
+  color: #ffffff;
+  background-color: #deebff;
+  z-index: 0;
+}
+
+.carre-rond {
+  height: 45px;
+  width: 45px;
+  position: absolute;
+  text-align: center;
+  line-height: 45px;
+  z-index: 1;
+}
+
+.option {
+  font-weight: 700;
+  padding-left: 55px;
+  padding-right: 15px;
+  display: inline-block;
+  line-height: 45px;
+  width: 100%;
+}
+
+/* ---------------------------- */
+
+/* Définition des largueurs */
+
+.mw-1400 {
+  max-width: 1400px;
+}
+
 .w-47-mq-100 {
   width: 47%;
 }
@@ -82,6 +153,10 @@ footer {
 .w-100 {
   width: 100%;
 }
+
+/* ----------------------- */
+
+/* Définition des marges */
 
 .mar-10 {
   margin: 10px;
@@ -110,6 +185,10 @@ footer {
 .mar-bot-50 {
   margin-bottom: 50px;
 }
+
+/* ------------------ */
+
+/* Définition des padding */
 
 .pad-10 {
   padding: 10px;
@@ -163,42 +242,9 @@ footer {
   padding-bottom: 40px;
 }
 
-.fa-info {
-  border: 1px solid #deebff;
-  height: 25px;
-  width: 25px;
-  font-size: small;
-  text-align: center;
-  line-height: 23px;
-}
+/* ------------------- */
 
-.nos-hebergements {
-  padding-left: 20%;
-}
-
-.assistance {
-  padding-left: 20%;
-}
-
-.search input {
-  padding: 10px 0;
-  border: 1px solid #f2f2f2;
-}
-
-.search button {
-  padding: 10px;
-  color: #f2f2f2;
-  border-width: 0;
-  margin-left: -4px;
-  height: 38px;
-}
-
-.search i {
-  padding: 12px;
-  border-width: 0;
-  margin-right: -4px;
-  height: 38px;
-}
+/* Définition des backgrounds */
 
 .bc-blue {
   background-color: #0065fc;
@@ -216,28 +262,9 @@ footer {
   background-color: #fff;
 }
 
-.filtre {
-  border: 2px solid #deebff;
-  margin-left: 2%;
-  position: relative;
-  overflow: hidden;
-  min-width: 154px;
-}
+/* ----------------------- */
 
-.filtre a:hover {
-  color: #ffffff;
-  background-color: #deebff;
-  z-index: 0;
-}
-
-.carre-rond {
-  height: 45px;
-  width: 45px;
-  position: absolute;
-  text-align: center;
-  line-height: 45px;
-  z-index: 1;
-}
+/* Définition des bordures */
 
 .bor-rad-15 {
   border-radius: 15px;
@@ -258,6 +285,10 @@ footer {
 .bor-rad-right {
   border-radius: 0 15px 15px 0;
 }
+
+/* --------------------- */
+
+/* Définition de flex */
 
 .flex {
   display: flex;
@@ -291,29 +322,28 @@ footer {
   flex-direction: row;
 }
 
-.option {
-  font-weight: 700;
-  padding-left: 55px;
-  padding-right: 15px;
-  display: inline-block;
-  line-height: 45px;
-  width: 100%;
-}
+/* -------------------- */
 
 #hebergement {
   width: 65%;
-  height: 620px;
+  height: 600px;
   margin-right: 2%;
+}
+
+#hebergement > div {
+  margin: 0 10px;
 }
 
 #most-popular {
   width: 30%;
-  height: 620px;
+  height: 600px;
 }
 
 #activites-Marseille {
   width: 100%;
 }
+
+/* Formatage des cards */
 
 .card-hebergement {
   width: 250px;
@@ -393,6 +423,8 @@ footer {
   height: 150px;
 }
 
+/* --------------------------- */
+
 .box-shadow {
   box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.1);
   border-radius: 15px;
@@ -401,6 +433,8 @@ footer {
 .blue {
   color: #0065fc;
 }
+
+/* Définition des positions */
 
 .position-rel {
   position: relative;
@@ -411,11 +445,40 @@ footer {
   bottom: 5px;
 }
 
+/* -------------- */
+
+/* Footer */
+
+footer {
+  background-color: #f2f2f2;
+  width: 100%;
+}
+
+footer > div {
+  margin: 0 auto;
+}
+
+.nos-hebergements {
+  padding-left: 20%;
+}
+
+.assistance {
+  padding-left: 20%;
+}
+
+/* --------- */
+
 @media screen and (max-width: 992px) {
   header,
   main {
     padding: 0 15px;
   }
+
+  .search-button > i {
+    display: none;
+  }
+
+  /* Main */
 
   #hebergements-Marseille {
     flex-direction: column;
@@ -425,16 +488,29 @@ footer {
 
   #hebergement {
     width: 100%;
+    height: 600px;
     margin-bottom: 30px;
   }
 
-  .mar-10 {
+  #hebergement > h2 {
+    padding-left: 15px;
+  }
+
+  #hebergement > div {
     margin: 0;
+  }
+
+  #hebergement > a {
+    padding: 10px;
   }
 
   #most-popular {
     width: 100%;
     height: auto;
+  }
+
+  #most-popular:last-child {
+    padding: 40px 20px;
   }
 
   #popular {
@@ -452,8 +528,21 @@ footer {
     padding-bottom: 10px;
   }
 
+  #activites {
+    flex-direction: column;
+  }
+
+  #activites > div {
+    margin-bottom: 30px;
+    justify-content: space-around;
+  }
+
+  /* ----------- */
+
+  /* Formatage des cards */
+
   .card-popular {
-    width: 250px;
+    width: 230px;
     height: 250px;
     flex-direction: column;
   }
@@ -469,21 +558,9 @@ footer {
     height: 100%;
   }
 
-  .pad-hor-40 {
-    padding: 0;
-  }
-
-  .mar-bot-50 {
-    margin-bottom: 0;
-  }
-
-  #activites {
-    flex-direction: column;
-  }
-
-  #activites > div {
-    margin-bottom: 30px;
-    justify-content: space-around;
+  .card-popular > div > p {
+    position: absolute;
+    bottom: 27px;
   }
 
   .card-activite {
@@ -492,6 +569,16 @@ footer {
 
   .card-activite > img {
     width: 370px;
+  }
+
+  /* ------------------- */
+
+  .pad-hor-40 {
+    padding: 0;
+  }
+
+  .mar-bot-50 {
+    margin-bottom: 0;
   }
 
   .a-propos {
@@ -507,11 +594,13 @@ footer {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
   body {
     width: 100%;
     font-size: 17px;
   }
+
+  /* Définition de la navigation */
 
   header {
     padding: 0;
@@ -521,10 +610,6 @@ footer {
     display: flex;
     flex-direction: column;
     margin-bottom: 20px;
-  }
-
-  main {
-    padding: 0;
   }
 
   .mq-flex-wrap-wrap {
@@ -562,24 +647,54 @@ footer {
     border-top: 0;
   }
 
-  .nav-item:active {
+  .nav-item:hover {
+    border-top: 0;
+    padding: 0;
     border-bottom: solid 3px #0065fc;
   }
 
-  .nav-item:active > a {
+  .nav-item:hover > a {
     color: #0065fc;
   }
 
-  .nav-item:hover {
-    border-top: 0;
-    padding-left: 10%;
-    padding-bottom: 20px;
-    padding-top: 0;
-    padding-right: 0;
+  .nav-item > a {
+    display: block;
+    text-align: center;
+    line-height: 50px;
   }
 
   #recherche {
     padding: 0 15px;
+  }
+
+  .search i {
+    padding: 10px;
+  }
+
+  .search input {
+    width: 73%;
+  }
+
+  .search button {
+    padding: 0;
+  }
+
+  .search-button {
+    height: 45px;
+    width: 45px;
+    position: absolute;
+    text-align: center;
+    line-height: 45px;
+    z-index: 1;
+    border-radius: 10px;
+  }
+
+  .search-button > span {
+    display: none;
+  }
+
+  .search-button > i {
+    display: block;
   }
 
   #info {
@@ -589,6 +704,14 @@ footer {
   #info > i {
     margin-top: -5px;
     margin-right: 5px;
+  }
+
+  /* ------------------- */
+
+  /* Main */
+
+  main {
+    padding: 0;
   }
 
   #hebergements-Marseille {
@@ -602,10 +725,12 @@ footer {
 
   #hebergement > h2 {
     padding-left: 15px;
+    padding-top: 10px;
   }
 
   #hebergement > div {
     padding: 15px;
+    margin: 0;
   }
 
   #hebergement > a {
@@ -619,8 +744,12 @@ footer {
   }
 
   #most-popular > div {
-    padding: 20px 0;
+    padding-bottom: 20px;
     margin-bottom: 0;
+  }
+
+  #most-popular > div > i {
+    line-height: 30px;
   }
 
   #popular {
@@ -637,15 +766,20 @@ footer {
     margin-bottom: 0;
   }
 
+  /* ------- */
+
+  /* Formatage des cards */
+
   .card-popular {
     width: 100%;
-    height: 125px;
+    height: 150px;
     margin-bottom: 10px;
     flex-direction: row;
+    border: 2px solid white;
   }
 
   .card-popular > img {
-    padding: 5px;
+    padding: 3px;
     border-radius: 15px 0 0 15px;
     width: 150px;
     height: 100%;
@@ -653,15 +787,25 @@ footer {
 
   .card-hebergement {
     width: 100%;
-    height: 200px;
+    height: 220px;
     box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.1);
     border-radius: 15px;
+    position: relative;
   }
 
   .card-hebergement > img {
-    padding: 5px;
+    padding: 3px;
     width: 100%;
     height: 125px;
+  }
+
+  .card-hebergement > div > h3 {
+    padding-bottom: 8px;
+  }
+
+  .card-hebergement > div > .blue {
+    position: absolute;
+    bottom: 10px;
   }
 
   .card-activite {
@@ -678,6 +822,10 @@ footer {
     height: 150px;
     width: 100%;
   }
+
+  /* ------------------- */
+
+  /* Footer */
 
   footer > div {
     flex-direction: column;
@@ -697,4 +845,6 @@ footer {
     padding-left: 15px;
     margin-bottom: 20px;
   }
+
+  /* -------- */
 }
