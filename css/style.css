@@ -11,6 +11,10 @@ body {
   font-size: 14px;
 }
 
+h3 {
+  font-size: 15px;
+}
+
 .fw-700 {
   font-weight: 700;
 }
@@ -140,6 +144,14 @@ nav {
 
 .mw-1400 {
   max-width: 1400px;
+}
+
+.mw-36 {
+  min-width: 36%;
+}
+
+.w-40 {
+  width: 40%;
 }
 
 .w-47-mq-100 {
@@ -298,6 +310,10 @@ nav {
   align-items: center;
 }
 
+.ai-flex-end {
+  align-items: flex-end;
+}
+
 .jc-space-between {
   justify-content: space-between;
 }
@@ -346,33 +362,37 @@ nav {
 /* Formatage des cards */
 
 .card-hebergement {
-  width: 250px;
+  width: 30%;
   height: 200px;
 }
 
 .card-hebergement > img {
   padding: 5px;
-  width: 250px;
+  width: 100%;
   height: 125px;
 }
 
 .card-popular {
-  width: 350px;
+  width: 100%;
   height: 125px;
   border: 6px solid white;
 }
 
 .card-popular > img {
-  width: 140px;
   height: 100%;
+  width: 36%;
 }
 
 .card-activite {
-  width: 300px;
+  width: 50%;
+}
+
+.card-activite.second {
+  width: 100%;
 }
 
 .card-activite > img {
-  width: 300px;
+  width: 100%;
 }
 
 .vieux-port {
@@ -381,6 +401,7 @@ nav {
 
 .vieux-port > img {
   height: 400px;
+  width: 100%;
 }
 
 .fort-pomegues {
@@ -389,6 +410,7 @@ nav {
 
 .fort-pomegues > img {
   height: 175px;
+  width: 100%;
 }
 
 .iles-frioul {
@@ -397,6 +419,7 @@ nav {
 
 .iles-frioul > img {
   height: 125px;
+  width: 100%;
 }
 
 .parc-nat-calanques {
@@ -405,6 +428,7 @@ nav {
 
 .parc-nat-calanques > img {
   height: 400px;
+  width: 100%;
 }
 
 .notre-dame {
@@ -413,6 +437,7 @@ nav {
 
 .notre-dame > img {
   height: 150px;
+  width: 100%;
 }
 
 .parc-longchamp {
@@ -421,6 +446,7 @@ nav {
 
 .parc-longchamp > img {
   height: 150px;
+  width: 100%;
 }
 
 /* --------------------------- */
@@ -564,11 +590,11 @@ footer > div {
   }
 
   .card-activite {
-    width: 370px;
+    width: 50%;
   }
 
   .card-activite > img {
-    width: 370px;
+    width: 100%;
   }
 
   /* ------------------- */
@@ -783,6 +809,10 @@ footer > div {
     border-radius: 15px 0 0 15px;
     width: 150px;
     height: 100%;
+  }
+
+  .card-popular > div > p {
+    top: 60px;
   }
 
   .card-hebergement {
