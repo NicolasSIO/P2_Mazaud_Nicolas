@@ -526,10 +526,6 @@ footer > div {
     margin: 0;
   }
 
-  #hebergement > a {
-    padding: 10px;
-  }
-
   #most-popular {
     width: 100%;
     height: auto;
@@ -759,10 +755,6 @@ footer > div {
     margin: 0;
   }
 
-  #hebergement > a {
-    padding: 15px;
-  }
-
   #most-popular {
     padding: 15px;
     width: 100%;
@@ -792,6 +784,10 @@ footer > div {
     margin-bottom: 0;
   }
 
+  #activites > div > div {
+    width: 100%;
+  }
+
   /* ------- */
 
   /* Formatage des cards */
@@ -807,7 +803,7 @@ footer > div {
   .card-popular > img {
     padding: 3px;
     border-radius: 15px 0 0 15px;
-    width: 150px;
+    width: 35%;
     height: 100%;
   }
 
